@@ -107,6 +107,15 @@ class HomeScreen extends StatelessWidget {
               },
             ),
             IconButton(
+              icon: Icon(Icons.drive_folder_upload),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ChatScreen()),
+                );
+              },
+            ),
+            IconButton(
               icon: Icon(Icons.chat),
               onPressed: () {
                 Navigator.push(
